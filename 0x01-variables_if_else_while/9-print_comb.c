@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints all combinations of single digit numbers
- * except 9 followed by new line
+ * main - prints all combinations of single digit numbers except 9
  * Return: Always 0 (Success)
  */
 int main(void)
