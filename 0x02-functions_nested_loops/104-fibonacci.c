@@ -11,7 +11,9 @@ int main(void)
 	unsigned long int a = 1, b = 2, next = 0;
 
 	printf("%lu", a);
+	printf(", ");
 	printf("%lu", b);
+	printf(", ");
 
 	while (i < 98)
 	{
