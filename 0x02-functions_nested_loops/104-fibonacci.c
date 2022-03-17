@@ -10,6 +10,9 @@ int main(void)
 	int i = 1;
 	unsigned long int a = 1, b = 2, next = 0;
 
+	printf("%lu", a);
+	printf("%lu", b);
+
 	while (i < 98)
 	{
 		next = a + b;
