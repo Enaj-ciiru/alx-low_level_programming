@@ -2,7 +2,7 @@
 /**
  * is_prime_number - says if an integer is a prime number or not
  * @n: number to evaluate
- *
+ * check - calculate prime of number
  * Return: prime number
  */
 int is_prime_number(int n)
