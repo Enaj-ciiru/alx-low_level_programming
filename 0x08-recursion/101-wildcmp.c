@@ -77,4 +77,23 @@ int wildcmp(char *s1, char *s2)
 	 */
 	if (*s1 == '\0' || *s2 == '\0')
 		return (0);
+	/**
+	 * if the char in s2 is a *
+	 * finds the address of the first char after the *
+	 * if we reached the end of s2, return 1
+	 * if the chars are equal, add the return values of wildcmp() to sum
+	 * add the return value of bandersnatch() to sum
+	 * convert non-zero to 1, keeps 0 at 0, return
+	 */
+	if (*s2 == '*')
+	{
+		s2 = move(s2);
+		if (*s2 == '\0')
+			return (1);
+		if (*s1 == *s2)
+			sum += wildcmp(s1 + 1, s2 + 1);
+		sum += bandersnatch(s1 + 1, s2);
+		return (!!sum);
+	}
+	return (0);
 }
