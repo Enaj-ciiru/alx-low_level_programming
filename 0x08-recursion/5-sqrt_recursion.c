@@ -1,18 +1,5 @@
 #include "main.h"
 /**
- * _sqrt_recursion - finds natural square root of a number
- * @n: number to calculate the square root of
- *
- * Return: the resulting square root
- */
-
-int _sqrt_recursion(int n)
-{
-	if (n == 0)
-		return (-1);
-	return (check(1, n));
-}
-/**
  * check - calculates if a number is prime
  * @n: number to evaluate
  * @i: iterator
@@ -27,4 +14,16 @@ int check(int n, int i)
 		return (0);
 	else
 		return (check(n, i + 1));
+}
+/**
+ * _sqrt_recursion - finds natural square root of a number
+ * @n: number to calculate the square root of
+ *
+ * Return: the resulting square root
+ */
+int _sqrt_recursion(int n)
+{
+	if (n == 0)
+		return (-1);
+	return (check(1, n));
 }
