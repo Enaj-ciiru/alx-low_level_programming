@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * is_prime_number - says if an integer is a prime number or not
  * @n: number to evaluate
@@ -21,7 +20,7 @@ int check(int n, int i)
 {
 	if (i >= n && n > 1)
 		return (1);
-	else if (n % i == 0 || n<= 1)
+	else if (n % i == 0 || n <= 1)
 		return (0);
 	else
 		return (check(n, i + 1));
